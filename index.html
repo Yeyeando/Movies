@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="header-icon">
+            <img src="img/reproductor-de-cd.png" alt="Icon">
+        </div>
+
+        <div class="header-text">
+            <a href="index.html">Home</a>
+            <i>Today's movies</i>
+            <a href="rent.html">Rent</a>
+        </div>
+
+    </div>
+    <!-- carousel-->
+
+
+
+    <div class="carousel-title">
+        <i>Most viewed movies this month</i>
+    </div>
+    <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="carousel-button next" data-carousel-button="next"><i
+                class="fa-solid fa-angle-right"></i></button>
+        <ul data-slides>
+            <li class="slide">
+                <img src="img/Mario.jpg" alt="Mario">
+            </li>
+
+            <li class="slide">
+                <img src="img/Barbie.jpg" alt="Barbie">
+            </li>
+
+            <li class="slide" data-active>
+                <img src="img/elemental.jpg" alt="Elemental">
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- publicity-->
+
+    <div class="publicity">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Z441JUsxIa8?si=XpzaQ4SwOkntJGU9&autoplay=1&mute=1"
+            title="YouTube video player" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <!-- movies-->
+
+
+    <div class="movies-title">
+        <i>Top rated movies</i>
+    </div>
+
+    <div class="container-images">
+        <div class="movie">
+            <img src="img/Mario.jpg" alt="Mario">
+        </div>
+
+        <div class="movie">
+            <img src="img/caballerosdelzodiaco.jpg" alt="Knights of the Zodiac">
+        </div>
+
+        <div class="movie">
+            <img src="img/shrek.jpg" alt="Shrek2">
+        </div>
+
+        <div class="movie">
+            <img src="img/elemental.jpg" alt="Elemental">
+        </div>
+
+        <div class="movie">
+            <img src="img/endgame.jpeg" alt="Endgame">
+        </div>
+
+        <div class="movie">
+            <img src="img/harry.jpg" alt="Harry Potter 7">
+        </div>
+
+        <div class="movie">
+            <img src="img/toystory.jpg" alt="ToyStory 5">
+        </div>
+
+        <div class="movie">
+            <img src="img/Barbie.jpg" alt="Barbie">
+        </div>
+
+        <div class="movie">
+            <img src="img/anillos.jpg" alt="The Lord of the rings">
+        </div>
+
+        <div class="movie">
+            <img src="img/insideout.jpeg" alt="Inside out">
+        </div>
+    </div>
+
+
+    <div class="container-form">
+        <i>Our AI will solve your problems</i>
+<br>
+<br>
+    
+
+    <form action="" id="chat-form">
+        <input type="text" id="message-sender" name="message-sender" placeholder="Username">
+        <input type="text" id="message-text" name="message-text", placeholder="Text">
+        <button>Enviar mensaje</button>
+    </form>
+
+    <div id="message-list">
+
+    </div>
+
+    </div>
+
+
+    <script type="module" src="js/firebase.js"></script>
+    <script src="https://kit.fontawesome.com/0aa5ed487b.js" crossorigin="anonymous"></script>
+    <script src="js/carousel.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: rgb(25, 25, 32);
+}
+
+
+
+
+/*header---------------------------------------------------------------------------------------*/
+
+
+.header {
+    z-index: 1000;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(25, 25, 32);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.header img {
+    width: 10vh;
+    /* Ajusta el ancho del icono según tus necesidades */
+}
+
+
+.header-text {
+    display: flex;
+    flex-grow: 8;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.header-text a,
+.header-text i {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.header-text a :hover {
+    color: blue;
+}
+
+
+/*form----------------------------------------*/
+
+.container-form {
+    padding-top: 23vh;
+    padding-bottom: 23vh;
+    padding-left: 2vw;
+    font-size: 3em;
+    color: white;
+}
+
+
+#movies-error-1,
+#movies-error-2,
+#movies-error-3,
+#movies-error-4 {
+    color: red;
+    font-size: 40px;
+    visibility: hidden;
+
+}
+
+
+
+/*footer----------------------------------------*/
+
+.footer {
+    z-index: 1000;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(25, 25, 32);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-text {
+    display: flex;
+    flex-grow: 8;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer-text i {
+    margin-top: .8%;
+    margin-bottom: 2%;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* media query hasta 600-----------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    .header-text {
+        flex-direction: column;
+    }
+
+    .header-text a {
+        font-size: 10px;
+    }
+
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .footer-text i {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/* media query mayor que 1200-----------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+    .header-text a {
+        font-size: 34px;
+        font-variant: small-caps;
+    }
+
+    .footer-text i {
+        font-size: 34px;
+        font-variant: small-caps;
+    }
+
+}
